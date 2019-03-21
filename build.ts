@@ -6,7 +6,7 @@ import * as rimraf from 'rimraf';
 async function main() {
   // cleanup dist
   rimraf.sync(join(process.cwd(), '/dist'));
-  rimraf.sync(join(process.cwd(), '/node_modules/@ctrl/ngx-emoji-mart'));
+  rimraf.sync(join(process.cwd(), '/node_modules/@coyo/ngx-emoji-mart'));
 
   // make emoi
   await ngPackagr()
@@ -17,7 +17,7 @@ async function main() {
   // proper path support eventually
   copySync(
     join(process.cwd(), '/dist/emoji'),
-    join(process.cwd(), '/node_modules/@ctrl/ngx-emoji-mart/ngx-emoji'),
+    join(process.cwd(), '/node_modules/@coyo/ngx-emoji-mart/ngx-emoji'),
   );
   copySync(
     join(process.cwd(), '/dist/emoji'),

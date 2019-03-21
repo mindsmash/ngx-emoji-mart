@@ -6,7 +6,7 @@
     "types": [],
     "strict": true,
     "paths": {
-      "@ctrl/ngx-emoji-mart/ngx-emoji": ["./lib/emoji/public_api"]
+      "@coyo/ngx-emoji-mart/ngx-emoji": ["./lib/emoji/public_api"]
     }
   },
   "exclude": ["test.ts", "**/*.spec.ts"],

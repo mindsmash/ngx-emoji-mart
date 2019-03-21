@@ -1,9 +1,10 @@
 {
   "$schema": "../../../node_modules/ng-packagr/package.schema.json",
-  "name": "@ctrl/ngx-emoji-mart",
+  "name": "@coyo/ngx-emoji-mart",
   "version": "0.0.0",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://mindsmash.jfrog.io/mindsmash/api/npm/coyo-frontend/"
   },
   "description": "Customizable Slack-like emoji picker for Angular",
   "peerDependencies": {
@@ -12,7 +13,7 @@
   },
   "bugs": "https://github.com/TypeCtrl/ngx-emoji-mart/issues",
   "homepage": "https://github.com/TypeCtrl/ngx-emoji-mart",
-  "repository": "TypeCtrl/ngx-emoji-mart",
+  "repository": "mindsmash/ngx-emoji-mart",
   "license": "MIT",
   "sideEffects": [ "*.css" ],
   "ngPackage": {
@@ -20,7 +21,7 @@
       "entryFile": "public_api.ts",
       "languageLevel": ["dom", "es2017"],
       "umdModuleIds": {
-        "@ctrl/ngx-emoji-mart/ngx-emoji": "@ctrl/ngx-emoji-mart/ngx-emoji"
+        "@coyo/ngx-emoji-mart/ngx-emoji": "@coyo/ngx-emoji-mart/ngx-emoji"
       }
     },
     "dest": "../../../dist/picker"
